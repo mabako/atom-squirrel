@@ -1,6 +1,6 @@
 {
   "name": "language-squirrel",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A highlighter for Squirrel (.nut files)",
   "repository": "https://github.com/mabako/atom-squirrel",
   "license": "MIT",
