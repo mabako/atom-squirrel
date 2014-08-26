@@ -1,0 +1,151 @@
+'comment': 'Squirrel Syntax: version 0.1'
+'fileTypes': [
+  'nut'
+]
+'foldingStartMarker': '/\\*\\*|\\{\\s*$'
+'foldingStopMarker': '\\*\\*/|^\\s*\\}'
+'name': 'Squirrel'
+'patterns': [
+  {
+    'captures':
+      '1':
+        'name': 'storage.type.class.squirrel'
+      '2':
+        'name': 'entity.name.type.class.squirrel'
+      '3':
+        'name': 'storage.modifier.extends.squirrel'
+      '4':
+        'name': 'entity.other.inherited-class.squirrel'
+    'match': '\\b(class)\\s+([a-zA-Z_](?:\\w|\\.)*)(?:\\s+(extends)\\s+([a-zA-Z_](?:\\w|\\.)*))?'
+    'name': 'meta.class.squirrel'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'keyword.control.squirrel'
+      '2':
+        'name': 'entity.name.function'
+      '3':
+        'name': 'variable.parameter'
+    'match': '^\\s*(function)\\s*([a-zA-Z0-9_]*)\\s*\\(([a-zA-Z0-9_\\s,\\.\{\}=]*)\\)'
+    'name': 'other.function'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'entity.name.function'
+      '2':
+        'name': 'variable.parameter'
+    'match': '^\\s*(constructor)\\s*\\((.*)\\)'
+    'name': 'other.constructor'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'support.function'
+    'match': '^\\s*(::[a-zA-Z0-9_]*)'
+    'name': 'other.global'
+  }
+  {
+    'match': '\\b(if|while|do|switch|for|foreach|return|throw|yield|continue|catch|resume|default)\\b'
+    'name': 'keyword.control.squirrel'
+  }
+  {
+    'match': '\\b(local|class|function|constructor|enum)\\b'
+    'name': 'storage.type.squirrel'
+  }
+  {
+    'match': '\\b(extends|static|const)\\b'
+    'name': 'storage.modifier.squirrel'
+  }
+  {
+    'match': '\\b(delete|in|clone|instanceof|typeof)\\b'
+    'name': 'keyword.operator.squirrel'
+  }
+  {
+    'match': '\\btrue\\b'
+    'name': 'constant.language.boolean.true.squirrel'
+  }
+  {
+    'match': '\\bfalse\\b'
+    'name': 'constant.language.boolean.false.squirrel'
+  }
+  {
+    'match': '\\bnull\\b'
+    'name': 'constant.language.null.squirrel'
+  }
+  {
+    'match': '\\b(base|this)\\b'
+    'name': 'variable.language.squirrel'
+  }
+  {
+    'match': '!|%|&|\\*|\\-\\-|\\-|\\+\\+|\\+|==|=|!=|<=|>=|<=>|<-|>>>|<<|>>|!|&&|\\|\\||\\?\\:|\\*=|(?<!\\()/=|%=|\\+=|\\-=|&=|%=|\\b(in|instanceof|typeof)\\b'
+    'name': 'keyword.operator.squirrel'
+  }
+  {
+    'match': '\\;'
+    'name': 'punctuation.terminator.statement.squirrel'
+  }
+  {
+    'match': '\\b((0(x|X)[0-9a-fA-F]+)|([0-9]+(\\.[0-9]+)?))\\b'
+    'name': 'constant.numeric.squirrel'
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.squirrel'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.squirrel'
+    'name': 'string.quoted.single.squirrel'
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.squirrel'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.squirrel'
+    'name': 'string.quoted.double.squirrel'
+  }
+  {
+    'begin': '/\\*\\*(?!/)'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.squirrel'
+    'end': '\\*/'
+    'name': 'comment.block.documentation.squirrel'
+  }
+  {
+    'begin': '/\\*'
+    'captures':
+      '0':
+        'name': 'punctuation.definition.comment.squirrel'
+    'end': '\\*/'
+    'name': 'comment.block.squirrel'
+  }
+  {
+    'captures':
+      '1':
+        'name': 'punctuation.definition.comment.squirrel'
+    'match': '(//).*$\\n?'
+    'name': 'comment.line.double-slash.squirrel'
+  }
+  {
+    'match': '\\{|\\}'
+    'name': 'meta.brace.curly.squirrel'
+  }
+  {
+    'match': '\\(|\\)'
+    'name': 'meta.brace.round.squirrel'
+  }
+  {
+    'match': '\\[|\\]'
+    'name': 'meta.brace.square.squirrel'
+  }
+]
+'scopeName': 'source.nut'
