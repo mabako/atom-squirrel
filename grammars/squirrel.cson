@@ -47,7 +47,7 @@
     'name': 'other.global'
   }
   {
-    'match': '\\b(if|while|do|switch|for|foreach|return|throw|yield|continue|catch|resume|default)\\b'
+    'match': '\\b(if|while|do|switch|break|for|foreach|return|throw|yield|continue|catch|resume|default)\\b'
     'name': 'keyword.control.squirrel'
   }
   {
