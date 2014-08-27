@@ -27,7 +27,7 @@
         'name': 'entity.name.function'
       '3':
         'name': 'variable.parameter'
-    'match': '^\\s*(function)\\s*([a-zA-Z0-9_]*)\\s*\\(([a-zA-Z0-9_\\s,\\.\{\}=]*)\\)'
+    'match': '^\\s*(function)\\s*([a-zA-Z0-9_]*)\\s*\\(([a-zA-Z0-9_\\s,\\.\{\}\\[\\]=]*)\\)'
     'name': 'other.function'
   }
   {
