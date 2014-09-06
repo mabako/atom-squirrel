@@ -27,7 +27,7 @@
         'name': 'entity.name.function'
       '3':
         'name': 'variable.parameter'
-    'match': '^\\s*(function)\\s*([a-zA-Z0-9_]*)\\s*\\(([a-zA-Z0-9_\\s,\\.\{\}\\[\\]=]*)\\)'
+    'match': '^\\s*(function)\\s*([a-zA-Z0-9_]*)\\s*\\(([a-zA-Z0-9_\\s,\\.\{\}\\[\\]\"#=]*)\\)'
     'name': 'other.function'
   }
   {
@@ -111,6 +111,12 @@
       '0':
         'name': 'punctuation.definition.string.end.squirrel'
     'name': 'string.quoted.double.squirrel'
+    'patterns': [
+      {
+        'match': '\\\\.'
+        'name': 'constant.character.escape.squirrel'
+      }
+    ]
   }
   {
     'begin': '/\\*\\*(?!/)'
